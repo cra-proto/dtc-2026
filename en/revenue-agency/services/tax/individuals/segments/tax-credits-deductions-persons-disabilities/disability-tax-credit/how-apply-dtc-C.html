@@ -37,6 +37,8 @@ notedlinks:
         <li>
             <a href="eligible-dtc.html">Who is eligible</a>
         </li>
+		<li><a href="get-ready-apply.html">Get ready to apply</a>
+		</li>
         <li>
             <a href="how-apply-dtc.html" class="active">How to submit an application </a>
         </li>
@@ -56,16 +58,20 @@ notedlinks:
 </nav>
 <h1 property="name" id="wb-cont" class="gc-thickline">How to submit an application </h1>
 <nav role="navigation">
+	<p>There are 2 parts to the DTC application form:</p>
+		<ol class="lst-stps">
+			<li>The <strong>applicant</strong> adds information about the person with the impairment in <strong>part A</strong></li>
+			<li>The <strong>medical practitioner</strong> certifies the application in <strong>part B</strong></li>
+		</ol>
     <h2 class="h3">On this page</h2>
     <ul>
-        <li><a href="#toc0">Get ready to apply</a></li>
         <li><a href="#toc1">Fill out the application</a></li>
         <li><a href="#toc2">Submit the application</a></li>
         <li><a href="#toc3">Check processing times</a></li>
     </ul>
 </nav>
 <script type="text/javascript">
-    //window.onload is needed otherwise it doesnot scan whole document but upto the component area only new version
+    //window.onload is needed otherwise it does not scan whole document but up to the component area only new version
     window.onload = function() {
         var hTags = ['H2','H2','H2','H2'];
         var hText = ['Get ready to apply','Fill out the application','Submit the application','Check processing times'];
@@ -74,7 +80,7 @@ notedlinks:
                 var tags = document.querySelectorAll(hTags[i].toLowerCase());
     if(typeof tags != 'undefined' && tags != null){
                     for(var j = 0; j < tags.length; j++){
-                       // mws-1900 - the heading from texts contains contains text without backslash before appostraphy, where as tags returned by query selector does not contain them
+                       // mws-1900 - the heading from texts contains contains text without backslash before apostrophe, where as tags returned by query selector does not contain them
                         // hence removing backslash for creating equal comparison in order to add id reference
                         if(tags[j].textContent.trim() === hText[i].replace(/\\/g, '')) {
     			if(!tags[j].id) {
@@ -89,72 +95,6 @@ notedlinks:
     };
 </script>
 
-        <h2>Get ready to apply</h2>
-        <p>Applying for the DTC involves the person who has the impairment and a medical practitioner who can certify the effects of the impairment.</p>
-        <h3>Find a medical practitioner to certify your impairment</h3>
-	<p>There are many types of medical practitioners who can complete and certify the effects of the impairment.</p>
-        <table class="table mrgn-tp-md">
-            <caption class="wb-inv">
-                Medical practitioners who can certify impairments
-            </caption>
-            <tbody>
-                <tr>
-                    <th scope="row" class="text-muted">Medical doctor</th>
-                    <td>All impairments</td>
-                </tr>
-                <tr>
-                    <th scope="row" class="text-muted">Nurse practitioner</th>
-                    <td>All impairments</td>
-                </tr>
-                <tr>
-                    <th scope="row" class="text-muted">Optometrist</th>
-                    <td>Vision</td>
-                </tr>
-                <tr>
-                    <th scope="row" class="text-muted">Audiologist</th>
-                    <td>Hearing</td>
-                </tr>
-                <tr>
-                    <th scope="row" class="text-muted">Occupational therapist</th>
-                    <td>Walking, feeding, dressing</td>
-                </tr>
-                <tr>
-                    <th scope="row" class="text-muted">Physiotherapist</th>
-                    <td>Walking</td>
-                </tr>
-                <tr>
-                    <th scope="row" class="text-muted">Psychologist</th>
-                    <td>Mental functions</td>
-                </tr>
-                <tr>
-                    <th scope="row" class="text-muted">Speech-language pathologist</th>
-                    <td>Speaking</td>
-                </tr>
-            </tbody>
-        </table>
-        <details>
-            <summary>Possible medical practitioner fees</summary>
-            <p>If your medical practitioner charges a fee for completing the DTC application, you are responsible to pay it. However, you may be able to <a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/lines-33099-33199-eligible-medical-expenses-you-claim-on-your-tax-return.html">claim it as a medical expense</a> on your tax return.</p>
-        </details>
-	<details>
-                                    <summary>How medical practitioners assess patients</summary>
-                                    <p>Medical practitioners use their best professional judgment when filling out Part&nbsp;B of the application.</p>
-                                    <p>They may base their assessment on:</p>
-                                    <ul>
-                                        <li>the symptoms reported by the patient</li>
-                                        <li>their knowledge of the patient's medical history</li>
-                                        <li>their direct observation of the patient’s limitations</li>
-                                        <li>their knowledge of the effects of the impairment(s) as they relate to the patient's medical condition</li>
-                                    </ul>
-                                    <p class="mrgn-tp-md">The CRA bases its decision about eligibility on the information that medical practitioners provide in Part&nbsp;B.</p>
-                                </details>
-        <h3>When to apply</h3>
-        <p>You may apply for the DTC at any time during the year.</p>
-        <p>However, if you submit your application at the same time that you file your tax return, there may be a delay in your tax assessment. The Canada Revenue Agency (CRA) will review your DTC application before your tax return is assessed.</p>
-        <p>To avoid a possible delay, submit your DTC application before you file your tax return.</p>
-        <h3>Decide who is claiming the credit</h3>
-        <p>If you intend to split or transfer the credit, it will save you time to include the supporting family member information in Part A question 2 of the DTC application.</p>
-        <p>For more details see, <a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/segments/tax-credits-deductions-persons-disabilities/disability-tax-credit/claiming-dtc.html">Transferring the credit</a>.</p>
         <h2>Fill out the application</h2>
         <p>You may apply for the DTC using the digital form or the printed paper form. <strong>Choose 1 method to apply:</strong></p>
         <section class="alert alert-warning mrgn-bttm-lg">
@@ -226,29 +166,9 @@ notedlinks:
                                 <section class="alert alert-warning">
                                     <p>Part B must only be completed <strong>by the medical practitioner</strong>. Applicants <strong>cannot</strong> complete Part B themselves. If an applicant completes Part B themselves, it will <strong>not</strong> be processed.</p>
                                 </section>
-                                <p>To complete Part&nbsp;B, medical practitioners must open the <a href="https://apps.cra-arc.gc.ca/ebci/uisp/dtc/entry/en">DTC digital application for medical practitioners</a>.</p>
-								<p><mark>Refer to the <a href="medical-practitioners.html">instructions for medical practitioners</a></mark></p>
-                                <!--
-                                <p>You will need to enter the reference number provided by your patient.</p>
-                                <details class="small">
-                                    <summary>If you don’t have a reference number</summary>
-                                    <p>You may still fill out Part&nbsp;B of the digital form online if you don’t have a reference number, but the process is a bit different.</p>
-                                    <ol>
-                                        <li>Fill out part B of the form using the <a href="https://apps.cra-arc.gc.ca/ebci/uisp/dtc/entry/en">Digital application for medical practitioners</a></li>
-                                        <li>Print out the form and sign it</li>
-                                        <li>Give the form to your patient</li>
-                                    </ol>
-                                    <p>Your patient must then fill out Part A and submit the completed form T2201 to the CRA.</p>
-                                </details>
-                                <p>You must answer a few questions about your patient and the impairment(s).</p>
-                                <details class="small">
-                                    <summary>Information you need to provide</summary>
-                                    <ul>
-                                        <li>Basic information about the medical practitioner</li>
-                                        <li>Patient name and date of birth</li>
-                                        <li>Information about the effects of the impairment(s)</li>
-                                    </ul>
-                                </details>-->
+                               
+                                <p><a href="medical-practitioners.html">Instructions for medical practitioners</a></p>
+
 
                                 <p>After Part&nbsp;B is completed, the digital form is automatically submitted to the CRA. Medical practitioners have the option to save a copy of Part&nbsp;B for their records.</p>
                                 <p>The CRA may contact the medical practitioner’s office to verify the source of the application.</p>
@@ -305,29 +225,9 @@ notedlinks:
                                 <section class="alert alert-warning">
                                     <p>Part B must only be completed <strong>by the medical practitioner</strong>. Applicants <strong>cannot</strong> complete Part B themselves. If an applicant completes Part B themselves, it will <strong>not</strong> be processed.</p>
                                 </section>
-                                <p>To complete Part&nbsp;B, medical practitioners must open the <a href="https://apps.cra-arc.gc.ca/ebci/uisp/dtc/entry/en">DTC digital application for medical practitioners</a>.</p>
-                                <p><mark>Refer to the <a href="medical-practitioners.html">instructions for medical practitioners</a></mark></p>
-                                <!--
-                                <p>You will need to enter the reference number provided by your patient.</p>
-                                <details class="small">
-                                    <summary>If you don’t have a reference number</summary>
-                                    <p>You may still fill out Part&nbsp;B of the digital form online if you don’t have a reference number, but the process is a bit different.</p>
-                                    <ol>
-                                        <li>Fill out part B of the form using the <a href="https://apps.cra-arc.gc.ca/ebci/uisp/dtc/entry/en">Digital application for medical practitioners</a></li>
-                                        <li>Print out the form and sign it</li>
-                                        <li>Give the form to your patient</li>
-                                    </ol>
-                                    <p>Your patient must then fill out Part A and submit the completed form T2201 to the CRA.</p>
-                                </details>
-                                <p>You must answer a few questions about your patient and the impairment(s).</p>
-                                <details class="small">
-                                    <summary>Information you need to provide</summary>
-                                    <ul>
-                                        <li>Basic information about the medical practitioner</li>
-                                        <li>Patient name and date of birth</li>
-                                        <li>Information about the effects of the impairment(s)</li>
-                                    </ul>
-                                </details>-->
+                               
+                                <p><a href="medical-practitioners.html">Instructions for medical practitioners</a></p>
+
                                 <p>After Part&nbsp;B is completed, the digital form is automatically submitted to the CRA. Medical practitioners have the option to save a copy of Part&nbsp;B for their records.</p>
                                 <p>The CRA may contact the medical practitioner’s office to verify the source of the application.</p>
                                 <details class="small">
@@ -375,15 +275,11 @@ notedlinks:
                             </li>
                             <li>
                                 <strong>Medical practitioner completes Part&nbsp;B</strong>
-                                <p>The medical practitioner answers a few questions and completes <strong>only</strong> the impairment section(s) that apply to their patient.</p>
-                                <details class="small">
-                                    <summary>Types of questions</summary>
-                                    <ul>
-                                        <li>Basic information about the medical practitioner</li>
-                                        <li>Patient name and date of birth</li>
-                                        <li>Information about the effects of the impairment(s)</li>
-                                    </ul>
-                                </details>
+                                <section class="alert alert-warning">
+                                    <p>Part B must only be completed <strong>by the medical practitioner</strong>. Applicants <strong>cannot</strong> complete Part B themselves. If an applicant completes Part B themselves, it will <strong>not</strong> be processed.</p>
+                                </section>
+                               
+                                <p><a href="medical-practitioners.html">Instructions for medical practitioners</a></p>
                                 
                                 <p>After completing Part&nbsp;B, the medical practitioner must sign the "Certification" section on the last page.</p>
                             </li>
