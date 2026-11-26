@@ -185,8 +185,8 @@ notedlinks:
               </li>
               <li>No
                 <div class="wb-fieldflow-sub gc-font-2019" data-wb-fieldflow='{"renderas": "radio", "gcChckbxrdio":true, "isoptional": true, "reset": {"action": "addClass", "source": ".alert-result", "class": "hidden"}, "attributes": {"aria-describedby": "q3-desc"}}'>
-                  <!--Question 3--><div class="wb-fieldflow-header"> <p class="wb-fieldflow-label">The last way to be eligible for the DTC is if you have an impairment or limitation in physical or mental functions. Do you have an impairment or limitation in <strong>one or more</strong> of these categories?</p><p id="q3-desc">
-					  <ul><li>Mental function</li>
+                  <!--Question 3--><div class="wb-fieldflow-header"> <p class="wb-fieldflow-label">The third way to be eligible for the DTC is if you have an impairment or limitation in physical or mental functions. Do you have an impairment or limitation in <strong>one or more</strong> of these categories?</p><p id="q3-desc">
+					  <ul><li>Mental functions necessary for everyday life</li>
 						<li>Walking</li>
 						<li>Dressing</li>
 						<li>Speaking</li>
@@ -198,38 +198,90 @@ notedlinks:
 				  </p>
 				  </div>
                   <ul>
-                      <li>I have an impairment in only one category
+                     <li>Yes
                         <div class="wb-fieldflow-sub gc-font-2019" data-wb-fieldflow='{"renderas": "radio", "gcChckbxrdio":true, "isoptional": true, "reset": {"action": "addClass", "source": ".alert-result", "class": "hidden"}}'>
-                          <!--Question 3a1--><p>Is your impairment present all the time, or at least 90% of the time?</p>
+                          <!--Question 3a-->Do you have an impairment in one category that is present all the time, or at least 90% of the time?</p>
                           <ul>
                               <li>Yes
-                                <!--Question 3a2--><div class="wb-fieldflow-sub gc-font-2019" data-wb-fieldflow='{"renderas": "radio", "gcChckbxrdio":true, "isoptional": true, "reset": {"action": "addClass", "source": ".alert-result", "class": "hidden"}}'>
-                                  <p>Has your impairment lasted (or is it expected to last) at least 12 consecutive months?</p>
+                                <!--Question 3a1--><div class="wb-fieldflow-sub gc-font-2019" data-wb-fieldflow='{"renderas": "radio", "gcChckbxrdio":true, "isoptional": true, "reset": {"action": "addClass", "source": ".alert-result", "class": "hidden"}}'>
+                                  <p>Has your impairment in that category lasted (or is it expected to last) at least 12 consecutive months?</p>
                                   <ul>
                                       <li>Yes
-                                        <div class="wb-fieldflow-sub gc-font-2019" data-wb-fieldflow='{"renderas": "radio", "gcChckbxrdio":true, "isoptional": true, "reset": {"action": "addClass", "source": ".alert-result", "class": "hidden"}, "attributes": {"aria-describedby": "q3a3-desc"}}'>
-                                          <!--Question 3a3--><div class="wb-fieldflow-header"> <p class="wb-fieldflow-label">Which category describes your impairment?</p>
-                                  <p id="q3a3-desc">Choose the category that fits your situation. "Unable" includes your situation if it takes you at least 3 times longer than someone your age who does not have the impairment (even with appropriate therapy, medication, and devices).</p>
-										  </div>
+                                        <div class="wb-fieldflow-sub gc-font-2019" data-wb-fieldflow='{"renderas": "radio", "gcChckbxrdio":true, "isoptional": true, "reset": {"action": "addClass", "source": ".alert-result", "class": "hidden"}}'>
+                                          <!--Question 3a2--><p>Which category is your impairment in?</p>
                                           <ul>
-                                              <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-4", "class": "hidden", "live": true}'>I am unable to perform mental functions necessary for everyday life</li>
-                                              <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-5", "class": "hidden", "live": true}'>I am unable to walk on my own</li>
-                                              <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-6", "class": "hidden", "live": true}'>I am unable to dress myself</li>
-                                              <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-7", "class": "hidden", "live": true}'>I am unable to speak so as to be understood by a familiar person in a quiet setting</li>
-                                              <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-8", "class": "hidden", "live": true}'>I am unable to personally manage bowel or bladder functions</li>
-                                              <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-9", "class": "hidden", "live": true}'>I am unable to prepare my own food or am unable to feed myself</li>
-                                              <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-10", "class": "hidden", "live": true}'>I am unable to hear so as to understand spoken conversation with a familiar person in a quiet setting</li>
-                                              <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-11", "class": "hidden", "live": true}'>My visual acuity in both eyes is 20/200 (6/60) or less on an eye chart (Snellen or an equivalent), or my field of vision in both eyes is 20 degrees or less</li>
-                                              <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-12", "class": "hidden", "live": true}'>I need more information to answer this question</li>
-                                              <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-2", "class": "hidden", "live": true}'>None of these categories describe my impairment</li>
+                                              <li>Mental functions necessary for everyday life
+												  <div class="wb-fieldflow-sub gc-font-2019" data-wb-fieldflow='{"renderas": "radio", "gcChckbxrdio":true, "isoptional": true, "reset": {"action": "addClass", "source": ".alert-result", "class": "hidden"}}'>
+                                          <!--Question 3a2a--><p>Are you unable to perform mental functions necessary for everyday life, or does it take you at least three times as long as []?</p>
+													  <ul><li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-4", "class": "hidden", "live": true}'>Yes</li>
+														  <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-15", "class": "hidden", "live": true}'>No</li>
+													  </ul>
+												  </div>
+											  </li>
+                                              <li>Walking
+												  <div class="wb-fieldflow-sub gc-font-2019" data-wb-fieldflow='{"renderas": "radio", "gcChckbxrdio":true, "isoptional": true, "reset": {"action": "addClass", "source": ".alert-result", "class": "hidden"}}'>
+                                          <!--Question 3a2b--><p>Are you unable to walk, or does it take you at least three times as long as []?</p>
+													  <ul><li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-5", "class": "hidden", "live": true}'>Yes</li>
+														  <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-15", "class": "hidden", "live": true}'>No</li>
+													  </ul>
+												  </div>
+											  </li>
+                                              <li>Dressing
+												  <div class="wb-fieldflow-sub gc-font-2019" data-wb-fieldflow='{"renderas": "radio", "gcChckbxrdio":true, "isoptional": true, "reset": {"action": "addClass", "source": ".alert-result", "class": "hidden"}}'>
+                                          <!--Question 3a2c--><p>Are you unable to dress yourself, or does it take you at least three times as long as []?</p>
+													  <ul><li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-6", "class": "hidden", "live": true}'>Yes</li>
+														  <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-15", "class": "hidden", "live": true}'>No</li>
+													  </ul>
+												  </div>
+											  </li>
+                                              <li>Speaking
+												  <div class="wb-fieldflow-sub gc-font-2019" data-wb-fieldflow='{"renderas": "radio", "gcChckbxrdio":true, "isoptional": true, "reset": {"action": "addClass", "source": ".alert-result", "class": "hidden"}}'>
+                                          <!--Question 3a2d--><p>Are you unable to speak so as to be understood by [], or does it take you at least three times as long as []?</p>
+													  <ul><li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-7", "class": "hidden", "live": true}'>Yes</li>
+														  <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-15", "class": "hidden", "live": true}'>No</li>
+													  </ul>
+												  </div>
+											  </li>
+                                              <li>Bowel or bladder function (eliminating)
+												  <div class="wb-fieldflow-sub gc-font-2019" data-wb-fieldflow='{"renderas": "radio", "gcChckbxrdio":true, "isoptional": true, "reset": {"action": "addClass", "source": ".alert-result", "class": "hidden"}}'>
+                                          <!--Question 3a2e--><p>Are you unable to personally manage your bowel or bladder functions, or does it take you at least three times as long as []?</p>
+													  <ul><li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-8", "class": "hidden", "live": true}'>Yes</li>
+														  <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-15", "class": "hidden", "live": true}'>No</li>
+													  </ul>
+												  </div>
+											  </li>
+                                              <li>Feeding
+												  <div class="wb-fieldflow-sub gc-font-2019" data-wb-fieldflow='{"renderas": "radio", "gcChckbxrdio":true, "isoptional": true, "reset": {"action": "addClass", "source": ".alert-result", "class": "hidden"}}'>
+                                          <!--Question 3a2f--><p>Are you unable to feed yourself, unable to prepare your own food, or does it take you at least three times as long as []?</p>
+													  <ul><li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-9", "class": "hidden", "live": true}'>Yes</li>
+														  <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-15", "class": "hidden", "live": true}'>No</li>
+													  </ul>
+												  </div>
+											  </li>
+                                              <li>Hearing
+												 <div class="wb-fieldflow-sub gc-font-2019" data-wb-fieldflow='{"renderas": "radio", "gcChckbxrdio":true, "isoptional": true, "reset": {"action": "addClass", "source": ".alert-result", "class": "hidden"}}'>
+                                          <!--Question 3a2g--><p>Are you unable to hear so as to understand [], or does it take you at least three times as long as []?</p>
+													  <ul><li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-10", "class": "hidden", "live": true}'>Yes</li>
+														  <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-15", "class": "hidden", "live": true}'>No</li>
+													  </ul>
+												  </div>
+											  </li>
+                                              <li>Vision
+												<div class="wb-fieldflow-sub gc-font-2019" data-wb-fieldflow='{"renderas": "radio", "gcChckbxrdio":true, "isoptional": true, "reset": {"action": "addClass", "source": ".alert-result", "class": "hidden"}}'>
+                                          <!--Question 3a2ah--><p>Is your visual acuity []?</p>
+													  <ul><li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-11", "class": "hidden", "live": true}'>Yes</li>
+														  <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-15", "class": "hidden", "live": true}'>No</li>
+													  </ul>
+												  </div>
+											  </li>
                                             </ul>
                                         </div>
                                       </li>
-                                      <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-2", "class": "hidden", "live": true}'>No</li>
+                                      <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-15", "class": "hidden", "live": true}'>No</li>
                                     </ul>
                                 </div>
                               </li>
-                              <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-2", "class": "hidden", "live": true}'>No</li>
+                              <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-15", "class": "hidden", "live": true}'>No</li>
                             </ul>
                         </div>
                       </li>
@@ -266,7 +318,8 @@ notedlinks:
                             </ul>
                         </div>
                       </li>
-                      <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-2", "class": "hidden", "live": true}'>I do not have an impairment or limitation in any of these categories</li>
+					  <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-12", "class": "hidden", "live": true}'>I need more information to answer this question</li>
+                      <li data-wb-fieldflow='{"action": "removeClass", "source": "#answer-2", "class": "hidden", "live": true}'>No</li>
                         </div>
                       </li>
                     </ul>
@@ -278,29 +331,29 @@ notedlinks:
     </ul>
 	  <div id="answers1" aria-live="polite">
          <!--Answer 1 -->
-            <div id="answer-1" class="hidden alert alert-success alert-result"><h3>You may be eligible</h3>Based on your answers, you may be eligible for the DTC. Find out which medical practitioners can certify your application and <a href="get-ready-apply-dtc.html">get ready to apply</a>.</div>
+            <div id="answer-1" class="hidden alert alert-success alert-result"><h3>You may be eligible</h3><p>Based on your answers, you may be eligible for the DTC. Find out which medical practitioners can certify your application and <a href="get-ready-apply-dtc.html">get ready to apply</a>.</p></div>
 		  <!--Answer 2 -->
-		  	<div id="answer-2" class="hidden alert alert-warning alert-result"><h3>You may not be eligible</h3>Based on your answers, you may not be eligible for the DTC. However, <strong>you can still send in an application</strong>. We will determine your eligibility based on the information on your application. Start the questions over again or <a href="get-ready-apply-dtc.html">get ready to apply</a>.</div>
+		  	<div id="answer-2" class="hidden alert alert-warning alert-result"><h3>You may not be eligible</h3><p>Based on your answers, you may not be eligible for the DTC. However, <strong>you can still send in an application</strong>. We will determine your eligibility based on the information on your application. Start the questions over again or <a href="get-ready-apply-dtc.html">get ready to apply</a>.</p></div>
 		  <!--Answer 3 -->
-		  	<div id="answer-3" class="hidden alert alert-success alert-result"><h3>You may be eligible</h3>Based on your answers, you may be eligible for the DTC. Complete your application with a medical doctor or nurse practitioner who can certify the details of your life-sustaining therapy. <a href="get-ready-apply-dtc.html">Get ready to apply</a>.</div>
+		  	<div id="answer-3" class="hidden alert alert-success alert-result"><h3>You may be eligible</h3><p>Based on your answers, you may be eligible for the DTC. Complete your application with a medical doctor or nurse practitioner who can certify the details of your life-sustaining therapy. <a href="get-ready-apply-dtc.html">Get ready to apply</a>.</p></div>
 		  <!--Answer 4 -->
-		  	<div id="answer-4" class="hidden alert alert-success alert-result"><h3>You may be eligible</h3>Based on your answers, you may be eligible for the DTC. Complete your application with a [mp] who can certify the details of your mental function impairment. <a href="get-ready-apply-dtc.html">Get ready to apply</a>.</div>
+		  	<div id="answer-4" class="hidden alert alert-success alert-result"><h3>You may be eligible</h3><p>Based on your answers, you may be eligible for the DTC. Complete your application with a [mp] who can certify the details of your mental function impairment. <a href="get-ready-apply-dtc.html">Get ready to apply</a>.</p></div>
 		  <!--Answer 5 -->
-			<div id="answer-5" class="hidden alert alert-success alert-result"><h3>You may be eligible</h3>Based on your answers, you may be eligible for the DTC. Complete your application with a [mp] who can certify the details of your walking impairment. <a href="get-ready-apply-dtc.html">Get ready to apply</a>.</div>
+			<div id="answer-5" class="hidden alert alert-success alert-result"><h3>You may be eligible</h3><p>Based on your answers, you may be eligible for the DTC. Complete your application with a [mp] who can certify the details of your walking impairment. <a href="get-ready-apply-dtc.html">Get ready to apply</a>.</p></div>
 		  <!--Answer 6 -->
-			<div id="answer-6" class="hidden alert alert-success alert-result"><h3>You may be eligible</h3>Based on your answers, you may be eligible for the DTC. Complete your application with a [mp] who can certify the details of your dressing impairment. <a href="get-ready-apply-dtc.html">Get ready to apply</a>.</div>
+			<div id="answer-6" class="hidden alert alert-success alert-result"><h3>You may be eligible</h3><p>Based on your answers, you may be eligible for the DTC. Complete your application with a [mp] who can certify the details of your dressing impairment. <a href="get-ready-apply-dtc.html">Get ready to apply</a>.</p></div>
 		  <!--Answer 7 -->
-			<div id="answer-7" class="hidden alert alert-success alert-result"><h3>You may be eligible</h3>Based on your answers, you may be eligible for the DTC. Complete your application with a [mp] who can certify the details of your speaking impairment. <a href="get-ready-apply-dtc.html">Get ready to apply</a>.</div>
+			<div id="answer-7" class="hidden alert alert-success alert-result"><h3>You may be eligible</h3><p>Based on your answers, you may be eligible for the DTC. Complete your application with a [mp] who can certify the details of your speaking impairment. <a href="get-ready-apply-dtc.html">Get ready to apply</a>.</p></div>
 		  <!--Answer 8 -->
-			<div id="answer-8" class="hidden alert alert-success alert-result"><h3>You may be eligible</h3>Based on your answers, you may be eligible for the DTC. Complete your application with a [mp] who can certify the details of your bowel or bladder function (elimination) impairment. <a href="get-ready-apply-dtc.html">Get ready to apply</a>.</div>
+			<div id="answer-8" class="hidden alert alert-success alert-result"><h3>You may be eligible</h3><p>Based on your answers, you may be eligible for the DTC. Complete your application with a [mp] who can certify the details of your bowel or bladder function (elimination) impairment. <a href="get-ready-apply-dtc.html">Get ready to apply</a>.</p></div>
 		  <!--Answer 9 -->
-			<div id="answer-9" class="hidden alert alert-success alert-result"><h3>You may be eligible</h3>Based on your answers, you may be eligible for the DTC. Complete your application with a [mp] who can certify the details of your feeding impairment. <a href="get-ready-apply-dtc.html">Get ready to apply</a>.</div>
+			<div id="answer-9" class="hidden alert alert-success alert-result"><h3>You may be eligible</h3><p>Based on your answers, you may be eligible for the DTC. Complete your application with a [mp] who can certify the details of your feeding impairment. <a href="get-ready-apply-dtc.html">Get ready to apply</a>.</p></div>
 		  <!--Answer 10 -->
-			<div id="answer-10" class="hidden alert alert-success alert-result"><h3>You may be eligible</h3>Based on your answers, you may be eligible for the DTC. Complete your application with a [mp] who can certify the details of your hearing impairment. <a href="get-ready-apply-dtc.html">Get ready to apply</a>.</div>
+			<div id="answer-10" class="hidden alert alert-success alert-result"><h3>You may be eligible</h3><p>Based on your answers, you may be eligible for the DTC. Complete your application with a [mp] who can certify the details of your hearing impairment. <a href="get-ready-apply-dtc.html">Get ready to apply</a>.</p></div>
 		  <!--Answer 11 -->
-			<div id="answer-11" class="hidden alert alert-success alert-result"><h3>You may be eligible</h3>Based on your answers, you may be eligible for the DTC. Complete your application with a [mp] who can certify the details of your vision impairment. <a href="get-ready-apply-dtc.html">Get ready to apply</a>.</div>
+			<div id="answer-11" class="hidden alert alert-success alert-result"><h3>You may be eligible</h3><p>Based on your answers, you may be eligible for the DTC. Complete your application with a [mp] who can certify the details of your vision impairment. <a href="get-ready-apply-dtc.html">Get ready to apply</a>.</p></div>
 		  <!--Answer 12 -->
-		  	<div id="answer-12" class="hidden alert alert-info alert-result"><h3>Learn more about categories of impairment</h3>Get examples and watch videos to learn more about eligibility: 
+		  	<div id="answer-12" class="hidden alert alert-info alert-result"><h3>Learn more about categories of impairment</h3><p>Get examples and watch videos to learn more about eligibility:</p> 
 			  <ul>
 				<li><a href="eligible-dtc/mental-functions.html">Mental function</a></li>
 				<li><a href="eligible-dtc/walking.html">Walking</a></li>
@@ -312,9 +365,11 @@ notedlinks:
 				<li><a href="eligible-dtc/vision.html">Vision</a></li>
 			  </ul></div>
 		  <!--Answer 13 -->
-		  <div id="answer-13" class="hidden alert alert-success alert-result"><h3>You may be eligible</h3>You may be eligible. Learn more about <a href="cumulative-effect.html">how to apply when you have limitations in multiple categories</a>.</div>
+		  <div id="answer-13" class="hidden alert alert-success alert-result"><h3>You may be eligible</h3><p>Learn more about <a href="cumulative-effect.html">how to apply when you have limitations in multiple categories</a>.</p></div>
 		  <!--Answer 14 -->
-		  <div id="answer-14" class="hidden alert alert-success alert-result"><h3>Placeholder</h3>The user will be directed here to the questions about category eligibility.</div>
+		  <div id="answer-14" class="hidden alert alert-info alert-result"><h3>Placeholder</h3><p>The user will be directed here to the questions about category eligibility.</p></div>
+		  <!--Answer 15 -->
+		  <div id="answer-15" class="hidden alert alert-info alert-result"><h3>Placeholder</h3><p>The user will be directed here to the questions about cumulative effect eligibility.</p></div>
         </div>
 			  </form>
 </div>
