@@ -490,43 +490,46 @@ p.visible-action {
         </div>
     </div>
 
-<!--<script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
 /*Binds a navigation button for keyboard/screen readers to skip to the section navigation menu at the top of the template page */
-		(function( $, document, wb ) {
-	"use strict";
+  (function( $, document, wb ) {
+ "use strict";
 if($('.gcnav-menu').length> 0){
-	var pgLang = $("html").prop("lang");
-	/*Language change */
-	switch( pgLang.toLowerCase() ){
-		case "fr":
-			var gcNav = 'Passer au menu de navigation de la section'
-			break;
-		case "en":
-		default:
-			var gcNav = 'Skip to section navigation menu'
-			break;
-		}
-	
-	/*HTML code to inject */
-	$( "#wb-tphp" ).prepend('<li class="wb-slc"><a class="wb-sl" href="#gcnav-menu-header">' + gcNav + '</a></li>' );
+ var pgLang = $("html").prop("lang");
+ /*Language change */
+ switch( pgLang.toLowerCase() ){
+  case "fr":
+   var gcNav = 'Passer au menu de navigation de la section'
+   break;
+  case "en":
+  default:
+   var gcNav = 'Skip to section navigation menu'
+   break;
+  }
+ 
+ /*HTML code to inject */
+ $( "#wb-tphp" ).prepend('<li class="wb-slc"><a class="wb-sl" href="#gcnav-menu-header">' + gcNav + '</a></li>' );
 }
-})( jQuery, document, wb );		
+})( jQuery, document, wb );  
+});
 </script>
 <script>
+document.addEventListener("DOMContentLoaded", function() {
         $(".action-checkbox").change(function() {
             if ($('.action-checkbox:checked').length == $('.action-checkbox').length) {
                 $("#action-msg1").removeClass("hidden").addClass("visible");
                 $("#action-no-msg, #action-msg2").addClass("hidden").removeClass("visible");
             }
-
             if ($('.action-checkbox:checked').length !== $('.action-checkbox').length) {
                 $("#action-msg1, #action-no-msg").addClass("hidden").removeClass("visible");
                 $("#action-msg2").removeClass("hidden").addClass("visible");
             }
-
             if ($('.action-checkbox:checked').length == 0) {
                 $("#action-msg1, #action-msg2").addClass("hidden").removeClass("visible");
                 $("#action-no-msg").removeClass("hidden").addClass("visible");
             }
         })
-    </script>-->
+});
+    </script>
+
