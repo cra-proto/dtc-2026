@@ -29,6 +29,122 @@ notedlinks:
   - title: "Repository sitemap"
     link: "https://cra-proto.github.io/dtc/index.html"
 ---
+
+<style>  @charset "utf-8";
+
+/*Checkbox/Fieldflow radio input sizing,positioning*/
+.checkbox-lg > li.checkbox {
+	margin-top: 0px;
+}
+.checkbox-lg > li {
+	margin-left: -40px;
+	padding-left: 40px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	margin-bottom: 5px;
+	padding-right: 15px;
+}
+.checkbox-zebra > li:nth-child(2n+1) {
+	background-color: #f5f5f5;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+.checkbox-lg > li.checkbox input[type=checkbox], .fieldflow-lg .radio input[type=radio] {
+	margin-top: 12px;
+	transform: scale(2);
+}
+.checkbox-lg label, .fieldflow-lg, .fieldflow-lg label, .fieldflow-lg div, .fieldflow-lg select, .std-blt {
+	font-size: 20px;
+	line-height: 1.65em;
+}
+.std-blt {
+	list-style-type: disc;
+}
+.std-blt li label {
+	display: block;
+	padding-left: 0px;
+}
+.fieldflow-lg .radio label {
+	margin-left: 40px;
+}
+.fieldflow-lg .radio input[type=radio] {
+	margin-left: -40px;
+}
+.fieldflow-lg fieldset legend {
+	font-size: 22px;
+	margin-top: 0px;
+}
+
+/*Hide arrows in Chrome/FF for number input*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+ -webkit-appearance: none;
+ margin: 0;
+}
+/* Firefox */
+input[type=number] {
+	-moz-appearance: textfield;
+}
+output.wb-calc {
+	display: inline;
+}
+/*Validation invisible text appearance */
+.wb-frmvld #errors-default .wb-inv, .wb-frmvld .has-error .wb-inv {
+	clip: inherit;
+	height: inherit;
+	margin: inherit;
+	overflow: inherit;
+	position: inherit;
+	width: inherit;
+}
+.wb-frmvld .has-error .wb-inv {
+	color: #333;
+}
+:not(#wb-srch) main form:not(#gc-pg-hlpfl-frm), main .checkbox, main .checkbox-inline, main .radio, main .radio-inline, main form:not(#gc-pg-hlpfl-frm) :not(.btn-call-to-action).btn, main form :not(.btn-primary).btn {
+	font-size: 20px !important;
+	line-height: 1.65em !important;
+}
+.checkbox-lg>li {
+	margin-bottom: 20px;
+}
+.checkbox-lg>li .checkbox-block {
+	padding-left: 20px;
+}
+.checkbox-lg input[type=checkbox] {
+	/* Double-sized Checkboxes */
+	-ms-transform: scale(2); /* IE */
+	-moz-transform: scale(2); /* FF */
+	-webkit-transform: scale(2); /* Safari and Chrome */
+	-o-transform: scale(2); /* Opera */
+	transform: scale(2);
+	padding: 10px;
+	-webkit-background-color: #fff;
+}
+.checkbox-lg input[type=checkbox]:focus {
+	box-shadow: 0 0 2pt 1pt rgb(59, 153, 252);
+}
+.checkbox-lg label {
+	font-size: 1.2em;
+}
+p {
+	transition: all 1s;
+}
+p.hidden-action {
+	transform: scaleX(0);
+	overflow: hidden;
+	float: left;
+}
+p.visible-action {
+	transform: scaleX(1);
+	float: left;
+}
+
+
+/*Temporary solution for decision points inside wells or backgrounds */
+.well .dcsn-details, .well .dcsn-details details + .cnjnctn-or, [class*='bg-'] .dcsn-details, [class*='bg-'] .dcsn-details details + .cnjnctn-or {
+	background-color: inherit;
+}
+ </style>
 <div class="container">
     <div class="gcnav">
         <section class="gcnav-menu">
@@ -319,7 +435,7 @@ notedlinks:
 				<h3>How to complete a DTC application with multiple medical practitioner certifications</h3>
 <div class="wb-tabs mrgn-tp-lg">
   <div class="tabpanels">
-    <details id="details-panel1" class="provisional wb-details-close" aria-label="Online">
+    <details id="details-panel1" class="provisional wb-details-close" aria-label="Online" open="open">
       <summary class="py-3"><span class="px-3 center-block">Online or by phone</span></summary>
 		<ol class="lst-stps">
 			<li><a href="">Complete Part A</a> multiple times: one time for each different medical practitioner that needs to complete Part B of your appliction</li>
@@ -371,3 +487,43 @@ notedlinks:
         </div>
     </div>
 </div>
+<script>
+/*Binds a navigation button for keyboard/screen readers to skip to the section navigation menu at the top of the template page */
+		(function( $, document, wb ) {
+	"use strict";
+if($('.gcnav-menu').length> 0){
+	var pgLang = $("html").prop("lang");
+	/*Language change */
+	switch( pgLang.toLowerCase() ){
+		case "fr":
+			var gcNav = 'Passer au menu de navigation de la section'
+			break;
+		case "en":
+		default:
+			var gcNav = 'Skip to section navigation menu'
+			break;
+		}
+	
+	/*HTML code to inject */
+	$( "#wb-tphp" ).prepend('<li class="wb-slc"><a class="wb-sl" href="#gcnav-menu-header">' + gcNav + '</a></li>' );
+}
+})( jQuery, document, wb );		
+</script>
+<script>
+        $(".action-checkbox").change(function() {
+            if ($('.action-checkbox:checked').length == $('.action-checkbox').length) {
+                $("#action-msg1").removeClass("hidden").addClass("visible");
+                $("#action-no-msg, #action-msg2").addClass("hidden").removeClass("visible");
+            }
+
+            if ($('.action-checkbox:checked').length !== $('.action-checkbox').length) {
+                $("#action-msg1, #action-no-msg").addClass("hidden").removeClass("visible");
+                $("#action-msg2").removeClass("hidden").addClass("visible");
+            }
+
+            if ($('.action-checkbox:checked').length == 0) {
+                $("#action-msg1, #action-msg2").addClass("hidden").removeClass("visible");
+                $("#action-no-msg").removeClass("hidden").addClass("visible");
+            }
+        })
+    </script>
